@@ -23,7 +23,6 @@ class StoreListFragment : Fragment() {
     private lateinit var viewManager: RecyclerView.LayoutManager
 
     private val persistence by lazy { Repository(context!!.cacheDir) }
-    private lateinit var myView: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,8 +31,6 @@ class StoreListFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater.inflate(R.layout.fragment_store_list, container, false)
-
-        myView = view
 
         val isConnected = StoreDownloader.verifyAvailableNetwork(activity)
         val cacheAvailable = StoreDownloader.checkExists("${context?.cacheDir}/StoresKey")
