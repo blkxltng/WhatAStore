@@ -7,5 +7,6 @@
     <string name="fragmentStoreDetail_address">Address:</string>
     <string name="fragmentStoreDetail_phoneNumber">Phone Number:</string>
     <string name="fragmentStoreDetail_imageViewContestDesc">Logo for store</string>
-    <string name="fragmentStoreList_noStoresFound">- No stores found! -</string>
+    <string name="fragmentStoreList_noStoresFound">- No stores found! -\nConnect to the internet to find some!</string>
+    <string name="action_refresh">Refresh</string>
 </resources>
