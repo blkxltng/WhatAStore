@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit
 
 interface CacheProviders {
     @ProviderKey("StoresKey", EntryClass(StoresList::class))
-    @LifeTime(value = 1L, unit = TimeUnit.MINUTES)
+    @LifeTime(value = 30, unit = TimeUnit.SECONDS) //Cache will persist for 30 seconds if a connection is available
     @Expirable
     @UseIfExpired
     suspend fun getStore(dataProvider: suspend () -> StoresList): StoresList
