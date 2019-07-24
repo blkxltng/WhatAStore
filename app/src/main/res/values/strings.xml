@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">WhatAStore</string>
+    <string name="fragmentStoreDetail_addressTemplate">%1$s\n%2$s, %3$s %4$s</string>
+    <string name="storeAdapter_address">"%1$s, %2$s %3$s"</string>
+    <string name="fragmentStoreDetail_storeName">Store Name:</string>
+    <string name="fragmentStoreDetail_storeId">Store ID:</string>
+    <string name="fragmentStoreDetail_address">Address:</string>
+    <string name="fragmentStoreDetail_phoneNumber">Phone Number:</string>
+    <string name="fragmentStoreDetail_imageViewContestDesc">Logo for store</string>
+    <string name="fragmentStoreList_noStoresFound">- No stores found! -</string>
 </resources>

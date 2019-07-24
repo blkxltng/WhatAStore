@@ -2,8 +2,6 @@ package com.blkxltng.whatastore.cache
 
 import com.blkxltng.whatastore.Constants
 import com.blkxltng.whatastore.network.StoreDownloader
-import com.blkxltng.whatastore.network.StoreDownloader.storeApi
-import com.blkxltng.whatastore.objects.Store
 import com.blkxltng.whatastore.objects.StoresList
 import com.epam.coroutinecache.api.CacheParams
 import com.epam.coroutinecache.api.CoroutinesCache

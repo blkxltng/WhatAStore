@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listItemStore_imageViewDimen">96dp</dimen>
+    <dimen name="fragmentStoreDetail_imageViewDimen">240dp</dimen>
+    <dimen name="fragmentStoreDetail_textViewTextSize">14sp</dimen>
+    <dimen name="fragmentStoreDetail_LabelTextSize">16sp</dimen>
+</resources>

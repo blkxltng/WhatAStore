@@ -1,6 +1,5 @@
 package com.blkxltng.whatastore.fragments
 
-import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,18 +10,11 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.blkxltng.whatastore.adapters.StoreAdapter
+import com.blkxltng.whatastore.cache.Repository
 import com.blkxltng.whatastore.network.StoreDownloader
 import com.blkxltng.whatastore.objects.Store
 import com.blkxltng.whatastore.objects.StoresList
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import kotlinx.android.synthetic.main.fragment_store_list.view.*
-import com.blkxltng.whatastore.activities.MainActivity
-import com.blkxltng.whatastore.cache.Repository
-import com.epam.coroutinecache.api.CacheParams
-import com.epam.coroutinecache.api.CoroutinesCache
-import com.epam.coroutinecache.mappers.GsonMapper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -44,7 +36,7 @@ class StoreListFragment : Fragment() {
 
         val isConnected = StoreDownloader.verifyAvailableNetwork(activity)
         Toast.makeText(context, "Connection status is $isConnected", Toast.LENGTH_SHORT).show()
-        val cacheAvailable = true
+//        val cacheAvailable = true
 
 //        GlobalScope.launch (Dispatchers.Main) {
 //            val data = persistence.getStore()
