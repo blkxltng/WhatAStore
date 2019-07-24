@@ -61,15 +61,13 @@ class StoreListFragment : Fragment() {
     }
 
     private fun storeClicked(store: Store?) {
-        Toast.makeText(context, "You clicked ${store?.name}", Toast.LENGTH_SHORT).show()
 
         val storeDetailFragment = StoreDetailFragment.newInstance(store)
         val fragmentTransaction = activity?.supportFragmentManager?.beginTransaction()
-//        fragmentTransaction?.replace(com.blkxltng.whatastore.R.id.fragment_container, storeDetailFragment)
+        fragmentTransaction?.setCustomAnimations(R.anim.slide_out_down, R.anim.slide_in_down, R.anim.slide_in_up, R.anim.slide_out_up)
         fragmentTransaction?.hide(this)
         fragmentTransaction?.add(R.id.fragment_container, storeDetailFragment)
         fragmentTransaction?.addToBackStack(null)
-//        fragmentTransaction?.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out)
         fragmentTransaction?.commit()
 
     }
